@@ -12,13 +12,15 @@ class CashWithdrawal extends Component {
   render() {
     const {denominationsList} = this.props
     const {amount} = this.state
+    const name = 'Sarah Williams'
+    const initial = name.slice(0, 1)
 
     return (
       <div className="bg-container">
         <div className="card-container">
           <div className="profile-container">
-            <div className="profile">S</div>
-            <h1 className="name">Sarah Williams</h1>
+            <div className="profile">{initial}</div>
+            <h1 className="name">{name}</h1>
           </div>
           <div className="bal-container">
             <p className="para">Your Balance</p>
